@@ -4,16 +4,19 @@ using UnityEngine;
 
 public class elevator : MonoBehaviour
 {
-
+    
     // Start is called before the first frame update
     void Start()
     {
-        Debug.Log("A");
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        Debug.Log("B");
+        if (Input.GetKey(KeyCode.Space))
+        {
+            transform.position += new Vector3(0, 0.01f);
+        }
     }
 }
